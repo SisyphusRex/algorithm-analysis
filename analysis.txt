@@ -1,0 +1,13 @@
+O, Ω, Θ are not best or worst case:
+  They are the bounds of the runtime functions derived from the algorithm
+
+Worst Case Runtime
+  runtime complexity for an input that results in the longest execution.
+
+Find a function, f, of input, N, that represents the number of operations in the worst case:
+  f(N) = 3N + 3
+Reduce to big O
+  O(3N + 3) = O(N)
+
+Best-Case Runtime
+  runtime complexity for an input that results in the shortest execution
