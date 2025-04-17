@@ -1,0 +1,73 @@
+Big O Notation (UPPER BOUND)
+  Let 𝑓 and 𝑔 be functions from ℤ+ to ℝ≥
+    ℝ≥ denotes the set of nonnegative real numbers: ℝ≥ = ℝ+ ∪ {0}
+  Then 𝑓 is O(𝑔) if there are positive real numbers 𝑐 and 𝑛₀ such that for any 𝑛 ∈ ℤ+ where 𝑛 ≥ 𝑛₀,
+    𝑓(𝑛) ≤ 𝑐 * 𝑔(𝑛)
+    𝑛₀ need not be zero; we can omit small values of n if 𝑓(𝑛) < 𝑔(𝑛) and n < 𝑛₀
+
+Omega Notation Ω (LOWER BOUND)
+  Let 𝑓 and 𝑔 be functions from ℤ+ to ℝ≥
+  Then 𝑓 is Ω(𝑔) if there are positive real numbers 𝑐 and 𝑛₀ such that for any 𝑛 ∈ ℤ+ where 𝑛 ≥ 𝑛₀,
+    𝑓(𝑛) ≥ 𝑐 * 𝑔(𝑛)
+
+𝑓 is Ω(𝑔) iff 𝑔 is O(𝑓)
+
+Theta Notation Θ (SAME RATE) (GROWTH RATE) (TIGHT BOUND)
+  Let 𝑓 and 𝑔 be functions from ℤ+ to ℝ≥
+  Then 𝑓 is Θ(𝑔) if 𝑓 is O(𝑔) and 𝑓 is Ω(𝑔)
+
+Asymptotic Growth of Polynomials
+  let 𝑝(𝑛) be a degree-𝑘 polynomial of the form:
+  𝑝(𝑛) = 𝑎ₖ𝑛^𝑘 + 𝑎_(𝑘-1)𝑛^(𝑘-1)+ ... + 𝑎₁𝑛 + 𝑎₀
+  in which 𝑎ₖ > 0.
+  Then 𝑝(𝑛) is Θ(𝑛^𝑘)
+
+Rules of Asymptotic Growth
+  1. If f is O(h) and g is O(h), then f + g is O(h)
+  2. If f is Ω(h) or g is Ω(h), the f + g is Ω(h)
+  3. If f is O(g) and c is a positive real number, then c * f is O(g)
+  4. If f is Ω(g) and c is a positive real number, then c * f is Ω(g)
+  5. If f is O(g) and g is O(h), then f is O(h)
+  6. If f is Ω(g) and g is Ω(h), then f is Ω(h)
+
+Power Functions
+  f(n) is a power function if f(n) is Θ(n^k) for some positive real number k.
+  All power functions are:
+    Ω(log n)
+    O(c^n)
+    includes all polynomial functions
+
+Increasing order of Θ Growth Rate
+  Constant Θ(1)
+  log log Θ(log log n)
+  logarithmic Θ(log n)
+  Linear Θ(n)
+  nlogn Θ(nlogn)
+  Quadratic Θ(n^2)
+  Cubic Θ(n^3)
+  Exponential Θ(c^n), c>1
+  Factorial, Θ(n!)
+each growth rate is bounded by Ω above it and O below it
+
+Computational Complexity
+  Time Complexity
+    time
+  Space Complexity
+    memory
+Atomic Operations
+  (operations that are performed fully or not at all, with no intermediate states and other processes have to wait for it to finish)
+  assignment
+  arithmetic operations
+  comparison
+  return statements
+
+Time Complexity as Function
+  f: ℤ+ → ℤ+ such that f(n) is the maximum number of atomic operatioins performed by the algorithm on an input size n
+  f(n) means max{f(n), 1} which is the largest number between f(n) and 1, preventing f(n) < 1
+
+Asymptotic Complexity
+  rate of asymptotic growth of the algorithm's time complexity function f(n)
+
+Polynomial Time
+  O(n^k)
+  considered "Efficient"
