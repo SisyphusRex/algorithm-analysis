@@ -5,7 +5,7 @@ a, a+d, a+2d, ...
 $`(N-1) + (N-2)+...+2+1=\frac{N(N-1)}{2}`$  
 
 ## Geometric
-Each term is x times the previous term
+Each term is x times the previous term  
 a, ar, ar^2, ar^3  
-Used in generating functions  
+Used in generating functions.  
 $`H(x) = \sum_{j=0}^{\infty }x^{j}=\frac{1}{1-x}`$
