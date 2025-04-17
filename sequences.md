@@ -2,7 +2,7 @@
 Sequence of numbers in which each successive term is a sum of its preceding term and a fixed number.  
 a, a+d, a+2d, ...
 ### Sum of Natural Numbers
-also the summation of consecutive numbers
+also the summation of consecutive numbers  
 $`(N-1) + (N-2)+...+2+1=\frac{N(N-1)}{2}`$  
 
 ## Geometric
