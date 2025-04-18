@@ -1,5 +1,6 @@
 O, Ω, Θ are not best or worst case:
   They are the bounds of the runtime functions derived from the algorithm
+  Each notation can be applied to Best Case, Worst Case, and Average case
 
 Worst Case Runtime
   runtime complexity for an input that results in the longest execution.
